@@ -5,6 +5,15 @@
 
   <link data-require="bootstrap@3.3.5" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Local links -->
+<!-- 
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <script src="angular.min.js"></script>
+  <script src="bootstrap.min.js"></script> -->
+
+  <!-- Links for github page -->
+
   <script data-require="bootstrap@3.3.5" data-semver="3.3.5" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script data-require="angular.js@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular.js"></script>
   <script src="app.js"></script>
@@ -13,31 +22,24 @@
 
 <body ng-app="moodRing">
 
-  <div class="container">
-    <header align="center">
-      <h1>Mood Ring</h1>
-    </header>
-  </div>
+  <div class="block">
+    <div class="centered" ng-controller="TextCtrl as text">
 
-  <div class="container-fluid row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <div class="well" ng-controller="TextCtrl as text">
+      <h1>
+        Mood Ring
+      </h1>
 
-
-
-        <h4>Articulating your feelings is hard! Let the mood ring assist you.</h4>
-        <p>Write the first thing that comes into your mind.</p>
-        <form class="form-inline" ng-submit="tellMood()">
-          <input type="text" ng-model="usrMsg" placeholder="First thought, best thought..." class="form-control" />
-          <button class="btn btn-large btn-info">Try Me On!</button>
-        </form>
-
-
-        <h4>The mood ring says...</h4>
-        <p align="center">{{ mood }}</p>
-      </div>
-      <div class="col-md-3"></div>
+      <h4>Articulating your feelings is hard! Let the mood ring assist you.</h4>
+      <p>Write the first thing that comes into your mind.</p>
+      <form class="form-inline" ng-submit="tellMood()">
+        <input type="text" ng-model="usrMsg" placeholder="First thought, best thought..." class="form-control" />
+        <button class="btn btn-large btn-info" style="margin-top:10px">Try Me On!</button>
+      </form>
+      <h4>The mood ring says...</h4>
+      <p align="center" class="lead">{{ mood }}</p>
+      <p align="right">
+        &mdash;Created by <a href="https://github.com/Koralai/Koralai.github.io" target="_blank">Koralai</a>.
+      </p>
     </div>
   </div>
 
