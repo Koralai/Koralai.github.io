@@ -1,3 +1,21 @@
+/*base color scheme
+#a03ac9 #7f3dd3 #553fbc #3d4cd3 #3a6ec9
+*/
+
+body {
+  background: #553fbc;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Bad Script', cursive;
+  font-size: 70px;
+}
+
 /* This parent can be any width and height */
 .block {
   text-align: center;
@@ -21,6 +39,40 @@
   display: inline-block;
   vertical-align: middle;
   width: 80vmin;
-  background: #ddd;
+  background: #4375CB;
   padding: 10px;
+  color: #221;
+  border: 10px solid #3d4cd3;
+}
+
+.centered a {
+  color: #ddd;
+}
+
+.centered a:hover, .centered a:active {
+  background: #3d4cd3;
+  text-decoration: none;
+}
+
+.btn-ring {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #9C8DE2;
+  color: #221;
+  font-size: 16px;
+}
+
+.btn-ring:hover {
+  background: #9585E0;
+  color: #111;
+}
+
+.btn-ring:active {
+  background: #8E7CDE;
+  color: #111;
+}
+
+.form-custom {
+  color: #555;
+  font-size: 16px;
 }
