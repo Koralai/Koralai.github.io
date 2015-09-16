@@ -1,9 +1,7 @@
-/*base color scheme
-#a03ac9 #7f3dd3 #553fbc #3d4cd3 #3a6ec9
-*/
+/*Background tile from subtlepatterns.com*/
 
 body {
-  background: #553fbc;
+  background: #fff url('confectionary.png') repeat;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -39,37 +37,36 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   width: 80vmin;
-  background: #4375CB;
+  background: #B0E0E6;
   padding: 10px;
   color: #221;
-  border: 10px solid #3d4cd3;
 }
 
 .centered a {
-  color: #ddd;
+  color: #2A6F6F;
 }
 
 .centered a:hover, .centered a:active {
-  background: #3d4cd3;
+  background: #8BD1DA;
   text-decoration: none;
+}
+
+.centered .lead {
+  color: #006666;
 }
 
 .btn-ring {
   margin-top: 5px;
   margin-bottom: 5px;
-  background: #9C8DE2;
-  color: #221;
+  background: #2A6F6F;
+  color: #eee;
   font-size: 16px;
+  border: 0;
 }
 
-.btn-ring:hover {
-  background: #9585E0;
-  color: #111;
-}
-
-.btn-ring:active {
-  background: #8E7CDE;
-  color: #111;
+.btn-ring:hover, btn-ring:active {
+  background: #389494;
+  color: #eee;
 }
 
 .form-custom {
