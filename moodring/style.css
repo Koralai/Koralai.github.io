@@ -1,7 +1,7 @@
 /*Background tile from subtlepatterns.com*/
 
 body {
-  background: #fff url('confectionary.png') repeat;
+  background: #fff url('confectionary.png') no-repeat;
   font-family: 'Noto Sans', sans-serif;
 }
 
