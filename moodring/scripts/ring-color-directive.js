@@ -4,7 +4,7 @@
   angular.module('moodRing').directive('ringColor', function(){
     return {
       restrict: 'E',
-      templateUrl: '/templates/ring-color.html'
+      templateUrl: 'moodring/templates/ring-color.html'
     };
   });
 
