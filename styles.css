@@ -1,0 +1,175 @@
+/* Overriding FlexBox Grid */
+
+.row {
+    margin: 0;
+}
+
+/*Custom styling*/
+
+body {
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.78;
+    font-weight: 300;
+}
+
+h1 {
+    color: #ff8c00;
+}
+
+h2, h3 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    transition: color 0.15s linear;
+}
+
+a.no-underline:hover {
+    text-decoration: none;
+}
+
+.gradient {
+    background: #ffff66; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, deeppink , yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, deeppink, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, deeppink, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,deeppink ,  #ffff66); /* Standard syntax */
+    flex: 1 1 auto;
+    height: 18px;
+}
+
+.nav-btn {
+    box-sizing: border-box;
+}
+
+.portrait {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.top-section {
+    margin: 18px auto 36px auto;
+}
+
+.circle-btn {
+    display: inline-block;
+    border-radius: 50%;
+    background: #ff7980;
+    height: 48px;
+    width: 48px;
+    padding: 4px;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 58px;
+    transition: background-color 0.2s linear;
+}
+
+.circle-btn i {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(165, 78, 82, 0.85);
+}
+
+.circle-btn:hover {
+    background-color: #ff4889;
+}
+
+.content {
+    box-sizing: border-box;
+    margin-bottom: 72px;
+}
+
+.justify-right {
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 36px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+small {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*Custom FlexBox settings*/
+
+.flex-container {
+    display:flex;
+}
+
+.work-portfolio {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-screencap {
+    height: 180px;
+    background: pink;
+    margin: 0 9px 18px 9px;
+    flex: 0 0 240px;
+    box-shadow: 3px 3px 9px #aaa;
+}
+
+.work-screencap:hover {
+    box-shadow: 1px 1px 4px #aaa;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/*Responsive display*/
+
+@media (min-width: 601px) {
+    nav {
+        justify-content: flex-end;
+    }
+    .nav-btn {
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .xs-display-off {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+    }
+    .nav-btn {
+        margin: 5px auto 5px auto; 
+    }
+}
+
+@media (max-width: 767px) {
+    .top-section {
+        text-align: center;
+    }
+    .portrait {
+        margin-top: 36px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .portrait {
+        margin: auto 36px auto auto;
+    }
+}
