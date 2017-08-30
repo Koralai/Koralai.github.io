@@ -14,8 +14,8 @@ body {
 
 p {
     color: #222;
-    font-size: 18px;
-    line-height: 1.78;
+    font-size: 16px;
+    line-height: 1.7;
     font-weight: 300;
 }
 
@@ -50,7 +50,7 @@ a.no-underline:hover {
     background: -moz-linear-gradient(right, deeppink, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right,deeppink ,  #ffff66); /* Standard syntax */
     flex: 1 1 auto;
-    height: 18px;
+    height: 16px;
 }
 
 .nav-btn {
@@ -64,7 +64,7 @@ a.no-underline:hover {
 }
 
 .top-section {
-    margin: 18px auto 36px auto;
+    margin: 16px auto 32px auto;
 }
 
 .circle-btn {
@@ -91,13 +91,13 @@ a.no-underline:hover {
 
 .content {
     box-sizing: border-box;
-    margin-bottom: 72px;
+    margin-bottom: 64px;
 }
 
 .justify-right {
     text-align: right;
     box-sizing: border-box;
-    padding-right: 36px;
+    padding-right: 32px;
 }
 
 .text-center {
@@ -122,14 +122,14 @@ small {
 
 .work-screencap {
     height: 180px;
-    background: pink;
-    margin: 0 9px 18px 9px;
+    background: silver;
+    margin: 0 8px 16px 8px;
     flex: 0 0 240px;
     box-shadow: 3px 3px 9px #aaa;
 }
 
 .work-screencap:hover {
-    box-shadow: 1px 1px 4px #aaa;
+    box-shadow: 3px 2px 14px -2px #aaa;
 }
 
 .wrap-reverse {
@@ -164,12 +164,12 @@ small {
         text-align: center;
     }
     .portrait {
-        margin-top: 36px;
+        margin-top: 32px;
     }
 }
 
 @media (min-width: 1400px) {
     .portrait {
-        margin: auto 36px auto auto;
+        margin: auto 32px auto auto;
     }
 }
