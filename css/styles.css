@@ -9,13 +9,13 @@ body {
     margin: 0;
   }
 
-  /* Element selectors */
+/* Element selectors */
 
 h1 {
     color: #0288D1;
     margin: 0 0 0.5rem;
     font-family: 'Inconsolata', monospace;
-    font-size: 3rem;
+    font-size: 2.75rem;
 }
 
 h3 {
@@ -29,11 +29,21 @@ h3 {
 header {
     background-color: #B3E5FC;
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: center;
 }
 
-/* Class selectors */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* General class selectors */
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
 
 .header-text {
     align-items: center;
@@ -43,12 +53,38 @@ header {
 }
 
 .profile-pic {
+    margin-top: 40px;
+}
+
+/* Utility classes */
+
+.layout-content-width {
+    flex-basis: 660px;
+}
+
+.mt-1 {
+    margin-top: 16px;
+}
+
+.mt-2 {
+    margin-top: 24px;
+}
+
+.mt-3 {
     margin-top: 32px;
 }
 
-  /* Responsiveness */
+.mt-4 {
+    margin-top: 40px;
+}
 
-  @media (max-width: 519px) {
+.mt-5 {
+    margin-top: 48px;
+}
+
+/* Responsiveness */
+
+  @media (max-width: 433px) {
       h1 {
           margin-top: 48px;
       }
