@@ -1,30 +1,42 @@
-/* Clear browser defaults */
+/* Override browser defaults */
 
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
   }
   
-body {
+body, h1, h2, h3 {
     margin: 0;
   }
+
+p {
+    margin: 8px 0;
+    color: #212121;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* Element selectors */
 
 h1 {
     color: #0288D1;
-    margin: 0 0 0.5rem;
     font-family: 'Inconsolata', monospace;
     font-size: 2.75rem;
 }
 
+h2 {
+    color: #0288D1;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+}
+
 h3 {
     color: #212121;
-    margin: 0;
     font-family: 'Inconsolata', monospace;
     font-size: 1.5rem;
 }
-
 
 header {
     background-color: #B3E5FC;
@@ -37,7 +49,18 @@ main {
     justify-content: center;
 }
 
-/* General class selectors */
+main p {
+    line-height: 2;
+}
+
+hr {
+    width: 36px;
+    border-width: 5px 0 0;
+    border-style: dashed;
+    border-color: #BDBDBD;
+}
+
+/* Class selectors */
 
 .header-container {
     display: flex;
@@ -54,6 +77,49 @@ main {
 
 .profile-pic {
     margin-top: 40px;
+}
+
+.main-container {
+    padding: 12px;
+}
+
+.main-container__subheading {
+    display: flex;
+    align-items: center;
+}
+
+.main-container__subheading-icon {
+    height: 32px;
+    margin-right: 12px;
+}
+
+.main-container__btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container__btn {
+    background-color: #B3E5FC;
+    border-radius: 4px;
+    box-shadow: 0 4px rgba(3,169,244,0.6);
+    color: rgba(33,33,33,0.85);
+    flex-basis: 450px;
+    padding: 16px;
+}
+
+.main-container__btn-text-layout {
+    align-items: center;
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    letter-spacing: 1.7px;
+}
+
+.main-container__btn:hover {
+    background-color: rgba(179,229,252,0.85);
+    box-shadow: 0 4px rgba(3,169,244,0.6);
 }
 
 /* Utility classes */
@@ -82,13 +148,36 @@ main {
     margin-top: 48px;
 }
 
-/* Responsiveness */
+.mb-1 {
+    margin-bottom: 16px;
+}
 
-  @media (max-width: 433px) {
-      h1 {
-          margin-top: 48px;
-      }
-      .profile-pic {
-          margin-top: 16px;
-      }
+.mb-2 {
+    margin-bottom: 24px;
+}
+
+.mb-3 {
+    margin-bottom: 32px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-5 {
+    margin-bottom: 48px;
+}
+
+/* Responsive design */
+
+@media (max-width: 433px) {
+  h1 {
+      margin-top: 48px;
   }
+  .profile-pic {
+      margin-top: 16px;
+  }
+  .main-container__subheading {
+      justify-content: center;
+  }
+}
