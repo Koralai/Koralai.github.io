@@ -60,6 +60,17 @@ hr {
     border-color: #BDBDBD;
 }
 
+footer {    
+    background-color: rgba(189,189,189,0.3);
+    color: rgba(117,117,117,0.85);
+    display: flex;
+    justify-content: center;
+}
+
+small {
+    font-size: 0.85rem;
+}
+
 /* Class selectors */
 
 .header-container {
@@ -77,10 +88,6 @@ hr {
 
 .profile-pic {
     margin-top: 40px;
-}
-
-.main-container {
-    padding: 12px;
 }
 
 .main-container__subheading {
@@ -104,7 +111,6 @@ hr {
     box-shadow: 0 4px rgba(3,169,244,0.6);
     color: rgba(33,33,33,0.85);
     flex-basis: 450px;
-    padding: 16px;
 }
 
 .main-container__btn-text-layout {
@@ -166,6 +172,26 @@ hr {
 
 .mb-5 {
     margin-bottom: 48px;
+}
+
+.pad-1 {
+    padding: 12px;
+}
+
+.pad-2 {
+    padding: 16px;
+}
+
+.pad-3 {
+    padding: 24px;
+}
+
+.pad-4 {
+    padding: 32px;
+}
+
+.pad-5 {
+    padding: 40px;
 }
 
 /* Responsive design */
