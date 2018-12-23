@@ -10,24 +10,24 @@ body, h1, h2, h3 {
   }
 
 p {
-    margin: 1.25rem 0;
     color: #212121;
+    margin: 1.25rem 0;
 }
 
 a {
-    text-decoration: none;
-    font-weight: bold;
     color: #03A9F4;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
     color: #0288D1;
+    text-decoration: underline;
 }
 
 strong {
-    font-weight: bold;
     color: black;
+    font-weight: bold;
 }
 
 /* Element selectors */
@@ -66,10 +66,10 @@ main p {
 }
 
 hr {
-    width: 36px;
-    border-width: 5px 0 0;
-    border-style: dashed;
     border-color: rgba(189,189,189,0.5);
+    border-style: dashed;
+    border-width: 5px 0 0;
+    width: 36px;
 }
 
 footer {    
@@ -103,8 +103,8 @@ small {
 }
 
 .main-container__subheading {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .main-container__subheading-icon {
@@ -150,8 +150,8 @@ small {
     border-radius: 5px;
     flex-grow: 1;
     font-weight: bold;
-    padding: 6px 24px;
     margin: 2px;
+    padding: 6px 24px;
     text-align: center;
 }
 
