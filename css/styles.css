@@ -10,12 +10,24 @@ body, h1, h2, h3 {
   }
 
 p {
-    margin: 8px 0;
+    margin: 1.25rem 0;
     color: #212121;
 }
 
 a {
     text-decoration: none;
+    font-weight: bold;
+    color: #03A9F4;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0288D1;
+}
+
+strong {
+    font-weight: bold;
+    color: black;
 }
 
 /* Element selectors */
@@ -57,7 +69,7 @@ hr {
     width: 36px;
     border-width: 5px 0 0;
     border-style: dashed;
-    border-color: #BDBDBD;
+    border-color: rgba(189,189,189,0.5);
 }
 
 footer {    
@@ -118,7 +130,6 @@ small {
     display: flex;
     font-family: 'Inconsolata', monospace;
     font-size: 1.5rem;
-    font-weight: bold;
     justify-content: center;
     letter-spacing: 1.7px;
 }
@@ -126,6 +137,22 @@ small {
 .main-container__btn:hover {
     background-color: rgba(179,229,252,0.85);
     box-shadow: 0 4px rgba(3,169,244,0.6);
+    text-decoration: none;
+}
+
+.main-container__skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container__skill-item {
+    background-color: rgba(179,229,252,0.85);
+    border-radius: 5px;
+    flex-grow: 1;
+    font-weight: bold;
+    padding: 6px 24px;
+    margin: 2px;
+    text-align: center;
 }
 
 /* Utility classes */
